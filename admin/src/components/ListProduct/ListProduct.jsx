@@ -17,18 +17,17 @@ const ListProduct = () => {
     fetchInfo();
   }, []);
 
-
-  const removeProduct=async(id)=>{
-    await fetch('http://localhost:4000/removeproduct',{
-      method:'POST',
-      headers:{
-        Accept:'application/json',
-        'Content-Type':'application/json'
+  const removeProduct = async (id) => {
+    await fetch("http://localhost:4000/removeproduct", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
       },
-      body:JSON.stringify({id:id})
+      body: JSON.stringify({ id: id }),
     });
     await fetchInfo();
-  }
+  };
 
   return (
     <div className="list-product">
@@ -55,7 +54,13 @@ const ListProduct = () => {
                 <p>${product.old_price}</p>
                 <p>${product.new_price}</p>
                 <p>{product.category}</p>
-                <img onClick={()=>{removeProduct(product.id)}} src={cross_icon} className="listproduct-remove-icon" />
+                <img
+                  onClick={() => {
+                    removeProduct(product.id);
+                  }}
+                  src={cross_icon}
+                  className="listproduct-remove-icon"
+                />
               </div>
               <hr />
             </>
