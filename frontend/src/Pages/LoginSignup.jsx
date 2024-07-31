@@ -15,7 +15,7 @@ export const LoginSignup = () => {
 
   const login = async () => {
     let responseData;
-    await fetch("http://localhost:4000/login", {
+    await fetch("https://shopper-ht1j.onrender.com/login", {
       method: "POST",
       headers: {
         Accept: "application/for-data",
@@ -36,7 +36,7 @@ export const LoginSignup = () => {
 
   const signUp = async () => {
     let responseData;
-    await fetch("http://localhost:4000/signup", {
+    await fetch("https://shopper-ht1j.onrender.com/signup", {
       method: "POST",
       headers: {
         Accept: "application/for-data",
