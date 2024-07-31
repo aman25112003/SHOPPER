@@ -14,11 +14,11 @@ const ShopContextProvider = (props) => {
   const [cartItems, setCartItems] = useState(getDefaultCart());
   console.log(all_products);
   useEffect(() => {
-    fetch("http://localhost:4000/allproducts")
+    fetch("https://shopper-ht1j.onrender.com/allproducts")
       .then((response) => response.json())
       .then((data) => setAll_Products(data));
       if(localStorage.getItem("auth-token")){
-        fetch("http://localhost:4000/getcart",{
+        fetch("https://shopper-ht1j.onrender.com/getcart",{
           method:"POST",
           headers:{
             Accept:'application/form-data',
@@ -38,7 +38,7 @@ const ShopContextProvider = (props) => {
       [itemId]: prev[itemId] + 1,
     }));
     if (localStorage.getItem("auth-token")) {
-      fetch("http://localhost:4000/addtocart", {
+      fetch("https://shopper-ht1j.onrender.com/addtocart", {
         method: "POST",
         headers: {
           Accept: "application/form-data",
@@ -59,7 +59,7 @@ const ShopContextProvider = (props) => {
       [itemId]: prev[itemId] - 1,
     }));
     if (localStorage.getItem("auth-token")) {
-      fetch("http://localhost:4000/removefromcart", {
+      fetch("https://shopper-ht1j.onrender.com/removefromcart", {
         method: "POST",
         headers: {
           Accept: "application/form-data",
