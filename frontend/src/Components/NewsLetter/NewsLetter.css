@@ -1,0 +1,160 @@
+.newLetter{
+    width: 65%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 0px 140px;
+    margin-bottom: 150px;
+    background: linear-gradient(180deg,#fde1ff 0%,#e1ffea22 60%);
+    gap: 30px;
+}
+
+.newLetter h1{
+    color: #454545;
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.newLetter p{
+    color: #454545;
+    font-size: 20px;
+}
+
+.newLetter div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    width: 730px;
+    height: 70px;
+    border-radius: 80px;
+    border: 1px solid #e3e3e3;
+}
+
+.newLetter input{
+    width: 500px;
+    margin-left: 30px;
+    border: none;
+    outline: none;
+    color: #616161;
+    font-family: Poppins;
+    font-size: 16px;
+}
+
+.newLetter div button{
+    width: 210px;
+    height: 70px;
+    border-radius: 80px;
+    background: black;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media(max-width:1280px){
+    .newLetter{
+        padding: 0px 80px;
+        margin-bottom: 120px;
+        gap: 20px;
+    }
+    .newLetter h1{
+        font-size: 36px;
+    }
+    .newLetter p{
+        font-size: 16px;       
+    }
+
+    .newLetter div{
+        width: 600px;
+        height: 60px;
+    }
+    .newLetter div input{
+        width: 400px;
+    }
+    .newLetter div button{
+        width: 160px;
+        height: 60px;
+    }
+}
+
+
+@media(max-width:1024px){
+    .newLetter{
+        margin-bottom: 60px;
+    }
+    .newLetter h1{
+        font-size: 30px;
+    }
+    .newLetter p{
+        font-size: 14px;       
+    }
+
+    .newLetter div{
+        width: 500px;
+        height: 50px;
+    }
+    .newLetter div input{
+        width: 300px;
+        font-size: 14px;
+    }
+    .newLetter div button{
+        width: 120px;
+        height: 50px;
+        font-size: 14px;
+    }
+}
+
+
+@media(max-width:800px){
+    .newLetter{
+        margin-bottom: 30px;
+        height: 35vh;
+    }
+    .newLetter h1{
+        font-size: 18px;
+    }
+    .newLetter p{
+        font-size: 12px;       
+    }
+
+    .newLetter div{
+        width: 400px;
+        height: 40px;
+    }
+    .newLetter div input{
+        width: 200px;
+        font-size: 13px;
+    }
+    .newLetter div button{
+        width: 100px;
+        height: 40px;
+        font-size: 13px;
+    }
+}
+
+@media(max-width:500px){
+    .newLetter{
+        height: 25vh;
+        width: 100%;
+        padding: 0;
+        gap: 15px;
+    }
+    .newLetter h1{
+        font-size: 16px;
+    }
+    .newLetter p{
+        font-size: 13px;       
+        max-width: 200px;
+        text-align: center;
+    }
+
+    .newLetter div{
+        width: 290px;
+    }
+    .newLetter div input{
+        width: 130px;
+    }
+}
